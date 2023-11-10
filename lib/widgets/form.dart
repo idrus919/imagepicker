@@ -35,12 +35,20 @@ class FormWidget extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           TextFormField(
+            onChanged: (value) {
+              bill.invoiceNumber = value;
+              onChanged(bill);
+            },
             decoration: const InputDecoration(
               labelText: 'Invoice Number',
             ),
           ),
           const SizedBox(height: 16),
           TextFormField(
+            onChanged: (value) {
+              bill.total = value;
+              onChanged(bill);
+            },
             decoration: const InputDecoration(
               labelText: 'Total Transaction',
             ),
