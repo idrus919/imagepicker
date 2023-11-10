@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:imagepicker/picker/controller.dart';
-import 'package:imagepicker/picker/index.dart';
+import 'package:imagepicker/bill/controller.dart';
+import 'package:imagepicker/bill/index.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Image Picker',
       debugShowCheckedModeBanner: false,
-      home: const PickerPage(),
+      home: const BillPage(),
       initialBinding: BindingsBuilder(
         () => Get.put<PickerController>(PickerController(), permanent: true),
       ),
