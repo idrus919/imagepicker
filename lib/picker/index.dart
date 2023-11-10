@@ -21,12 +21,11 @@ class PickerPage extends StatelessWidget {
           final images = controller.list;
 
           return Container(
-            margin: const EdgeInsets.all(15),
             height: 75,
             alignment: Alignment.centerLeft,
             child: ListView.separated(
               shrinkWrap: true,
-              padding: const EdgeInsets.only(left: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 final image = images[index];
